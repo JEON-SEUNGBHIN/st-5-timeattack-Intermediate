@@ -1,5 +1,5 @@
 // Hint: TodoItem 컴포넌트는 props 를 받습니다.
-export default function TodoItem() {
+const TodoItem = ({todo, onComplete, OnDelete, OnDone}) => {
   return (
     <li
       style={{
@@ -17,8 +17,9 @@ export default function TodoItem() {
       </section>
       <section>
         <button>완료</button>
-        <button>삭제</button>
+        <button onClick={() => OnDelete(todo.id)}>삭제</button>
       </section>
     </li>
   );
 }
+export default TodoItem;

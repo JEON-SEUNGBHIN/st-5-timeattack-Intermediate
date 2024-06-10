@@ -1,6 +1,6 @@
 import TodoItem from "./TodoItem";
 
-export default function TodoList({ isDone }) {
+const TodoList = ({ isDone }) => {
   return (
     <section>
       <h2>Working...</h2>
@@ -10,3 +10,4 @@ export default function TodoList({ isDone }) {
     </section>
   );
 }
+export default TodoList;
